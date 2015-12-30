@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+    <link rel="stylesheet" type="text/css" href="../Snake/css/snake.css">
+  </head>
+  <body>
+<h1>Snake</h1>
+<div id="Snake-container" class="group">
+  <span id="Scoreboard">Score: 0</span>
+  <span id="Highscore"></span>
+  <figure id="Snake"></figure>
+</div>
+
+<div id="Start" class="modal show">
+  <span class="intro"><span id="Title">The Classic Game of Snake</span>
+    Eat the pellets to increase your score.
+    <br>
+    Grow as large as you can without running into yourself or the walls.
+    <br>
+  </span>
+  <span id="Prompt">Ready. Set.</span>
+  <button>Go!</button>
+</div>
+
+<div id="Restart" class="modal hide"><span id="score"></span>
+  <br>
+  <span class="intro restart">
+    Eat the pellets to increase your score.
+    <br>
+    Grow as large as you can without running into yourself or the walls.
+    <br>
+  </span>
+  <button>Play Again</button>
+</div>
+
+<script src="../Snake/js/jquery-2.1.4.js"></script>
+
+<script src="../Snake/js/snake.js"></script>
+
+<script>
+(function () {
+  var rootEl = $('#Snake');
+  var start = $('#Start');
+  var restart = $('#Restart');
+  var scoreboard = $('#Scoreboard');
+  var highscore = $('#Highscore')
+  new View(rootEl, start, restart, scoreboard, highscore);
+})();
+</script>
+
+<h3>by Robert Romano</h3>
+
+</body>
+
+</html>

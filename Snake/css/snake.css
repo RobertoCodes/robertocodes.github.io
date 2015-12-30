@@ -1,0 +1,143 @@
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+  background: lightgray;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+figure {
+  display: inline-block;
+  border: 10px solid black;
+  background-image: url("../../Snake/img/background.png");
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#Snake-container {
+  width: 450px;
+  height: 460px;
+  margin: auto;
+  padding: 15px;
+  background: transparent;
+  background-image: url("../../Snake/img/background.png");
+
+}
+
+.intro {
+  font-size: 12px;
+}
+
+.intro.restart {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+ul {
+}
+
+ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+li {
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+
+.modal {
+  position: absolute;
+  padding-top: 10px;
+  top: 250px;
+  right: 540px;
+  background: transparent;
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#D3D3D3);
+  width: 300px;
+  height: 150px;
+  box-shadow: 6px 6px 17px 0px rgba(50, 59, 50, 0.9);
+}
+
+#Title {
+  font-weight: bold;
+    font-size: 16px;
+    display: block;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+#Prompt {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal > button {
+  font-size: 16px;
+  margin-top: 5px;
+  margin: auto;
+  display: block;
+  border: 1px solid #0000ff;
+  border-radius: 2px;
+  background: transparent;
+  background-image: -webkit-linear-gradient(top, #0099ff, #006bb3);
+  color: whitesmoke;
+}
+
+.modal > button:focus {
+  outline: none;
+}
+
+.modal > button:active {
+  border: inset 1px #0000ff;
+}
+
+.show {
+  z-index: 1000;
+}
+
+.hide {
+  display: none;
+}
+
+.food {
+  background-image: url("../../Snake/img/food.png");
+}
+
+.snake {
+  background-image: url("../../Snake/img/snake.png");
+}
+
+#Scoreboard {
+  float: left;
+  display: block;
+}
+
+#Highscore {
+  float: right;
+  display: block;
+}
