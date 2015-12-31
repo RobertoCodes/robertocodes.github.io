@@ -72,13 +72,13 @@ li {
 
 .modal {
   position: absolute;
-  padding-top: 10px;
-  top: 250px;
-  right: 540px;
+  top: 40%;
+  right: 39.2%;
   background: transparent;
   background-image: -webkit-linear-gradient(top,#f5f5f5,#D3D3D3);
   width: 300px;
   height: 150px;
+  padding-top: 10px;
   box-shadow: 6px 6px 17px 0px rgba(50, 59, 50, 0.9);
 }
 
